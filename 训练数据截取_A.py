@@ -14,8 +14,8 @@ from pynput.keyboard import Controller, Key, Listener
 from pynput import keyboard
 import time, threading
 
-_DEVICE_ID = '68UDU17B14011947'
-窗口名称="RNE-AL00"
+_DEVICE_ID = '26c1a0ad'
+窗口名称="Redmi K30"
 模型名称= 'model_weights_O35'
 训练数据保存目录='../训练数据样本'
 if not os.path.exists(训练数据保存目录):
@@ -162,10 +162,17 @@ def 处理方向():
 
 
 
-加三技能='d 0 552 1878 100\nc\nu 0\nc\n'
-加二技能='d 0 446 1687 100\nc\nu 0\nc\n'
-加一技能='d 0 241 1559 100\nc\nu 0\nc\n'
-购买='d 0 651 207 100\nc\nu 0\nc\n'
+# 加三技能='d 0 552 1878 100\nc\nu 0\nc\n'
+# 加二技能='d 0 446 1687 100\nc\nu 0\nc\n'
+# 加一技能='d 0 241 1559 100\nc\nu 0\nc\n'
+# 购买='d 0 651 207 100\nc\nu 0\nc\n'
+
+
+加三技能='d 0 1892 517 100\nc\nu 0\nc\n'
+加二技能='d 0 1660 645 100\nc\nu 0\nc\n'
+加一技能='d 0 1565 830 100\nc\nu 0\nc\n'
+购买='d 0 305 432 100\nc\nu 0\nc\n'
+
 词数词典路径="./json/词_数表.json"
 数_词表路径="./json/数_词表.json"
 操作查询路径="./json/名称_操作.json"
@@ -196,7 +203,7 @@ model = model.cuda(device).requires_grad_(False)
 while True:
     if AI打开 :
 
-
+    
 
 
 
